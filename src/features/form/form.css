@@ -1,0 +1,72 @@
+.form {
+    background-color: lightgrey;
+    width: 600px;
+    height: 270px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    user-select: none;
+}
+.selector {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding: 10px;
+    background-color: black;
+    align-items: center;
+    border-radius: 2px;
+}
+.option {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    line-height: 40px;
+}
+.option label {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+}
+.option input {
+    display: none;
+}
+input:checked + label {
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.input {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 550px;
+    margin-right: auto;
+    gap: 10px;
+    height: 160px;
+}
+.input input {
+    width: 300px;
+}
+.error {
+    position: absolute;
+    top: 425px;
+}
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+.submit button {
+    height: 36px;
+    width: 150px;
+    cursor: pointer;
+}

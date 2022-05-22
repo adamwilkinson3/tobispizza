@@ -1,0 +1,79 @@
+.main {
+    width: 100%;
+    height: 600px;
+}
+.pizza-head {
+    width: 100%;
+    height: 100%;    
+}
+.hidden {
+    opacity: 0;
+}
+.animation {
+    animation: page-load 5000ms ease-out forwards;
+    position: absolute;
+    top: -450px;
+    top: 200px;
+    
+}
+.pizza-delivery {
+    width: 400px;
+    max-width: 30vw;
+    height: 250px;
+    max-height: 30vw;
+}
+.pizza-time {
+    width: 400px;
+    max-width: 30vw;
+    position: relative;
+    top: -6px;
+    text-align: center;
+    color: yellow;
+    background-color: rgb(160, 0, 0);
+}
+.animation .pizza-time {
+    animation: page-load2 5000ms forwards 850ms;
+}
+
+@keyframes page-load {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(60vw);
+    }
+    100% {
+        transform: translateX(60vw);
+    }
+}
+@keyframes page-load2 {
+    2% {
+        background-color: yellow;
+        color: red;
+    }
+    4% {
+        background-color: red;
+        color: yellow;
+    }
+    6% {
+        background-color: yellow;
+        color: red;
+    }
+    8% {
+        background-color: red;
+        color: yellow;
+    }
+}
+
+.prices {
+    background-color: rgb(160, 0, 0);
+    height: 55px;
+    color: white;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    bottom: 60px;
+}

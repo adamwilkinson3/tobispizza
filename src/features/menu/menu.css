@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: min(2000px, 100vw);
+    margin: auto;
+    background-color: floralwhite;
+    padding-bottom: 100px;
+}
+.pizza-container {
+    flex-wrap: wrap;
+    flex-basis: 500px;
+    text-align: center;
+}
+.pizza-container img {
+    width: 100%;
+    height: 350px;
+}
+.pizza-text {
+    height: 100px;
+    background-color: gray;
+}
+.add-container {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.add-size {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.add-unit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.add-unit button {
+    width: 20px;
+}
