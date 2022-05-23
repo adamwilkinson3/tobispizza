@@ -41,9 +41,9 @@ Form() {
     <div class="form">
         <div class="selector">
             <div class="option">
-                    <input type="radio" value="Login" name="option" id="login" defaultChecked onClick={() => {setLogin(1); setUserName(''); setPassword(''); setConfirmPassword('');}} />
+                    <input type="radio" value="Login" name="option" id="login" defaultChecked onClick={() => {setLogin(1); setUserName(''); setPassword(''); setConfirmPassword(''); setError('');}} />
                     <label for="login">Login</label>
-                    <input type="radio" value="Register" name="option" id="register" onClick={() => {setLogin(0); setUserName(''); setPassword(''); setConfirmPassword('');}} />
+                    <input type="radio" value="Register" name="option" id="register" onClick={() => {setLogin(0); setUserName(''); setPassword(''); setConfirmPassword(''); setError('');}} />
                     <label for="register">Register</label>
             </div>
         </div>
