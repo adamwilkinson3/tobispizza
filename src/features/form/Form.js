@@ -16,16 +16,22 @@ Form() {
         setError("")
         if (login) {
             if (userName === sessionStorage.getItem("userName") && password === sessionStorage.getItem("password")) {
-                navigate("/home")
+                navigate("/")
             } else {
                 setError("Wrong Username or Password")
             }
         } else {
-            if (password === confirmPassword) {
+            if (password === confirmPassword && password && userName) {
                 sessionStorage.setItem("userName", userName)
                 sessionStorage.setItem("password", password)
-                navigate("/home")
-            } else {
+                navigate("/")
+            } else if (!userName) {
+                setError("Please enter a Username")
+            } else if (!password) {
+                setError("Please enter a Password")
+            } else if (!confirmPassword) {
+                setError("Please confirm Password")
+            } else if (password != confirmPassword) {
                 setError("Passwords do not match")
             }
         }

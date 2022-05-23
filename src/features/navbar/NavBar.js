@@ -19,7 +19,7 @@ function NavBar() {
 
   return (
     <div class='NavBar'>
-        <a href='./home' class='name'>Tobi's Pizza</a>
+        <a href='./' class='name'>Tobi's Pizza</a>
         <div class='navlinks'>
           <a href='./login'>Login/Register</a>
           <div class="dropdown">
