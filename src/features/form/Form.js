@@ -31,7 +31,7 @@ Form() {
                 setError("Please enter a Password")
             } else if (!confirmPassword) {
                 setError("Please confirm Password")
-            } else if (password != confirmPassword) {
+            } else if (password !== confirmPassword) {
                 setError("Passwords do not match")
             }
         }
