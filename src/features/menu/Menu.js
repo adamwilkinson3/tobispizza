@@ -3,13 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
   increment,
-  selectCart,
   selectPizzas,
 } from './menuSlice';
 import './menu.css'
 
 function Menu() {
-  const cart = useSelector(selectCart);
   const pizzas = useSelector(selectPizzas);
   const dispatch = useDispatch();
   return (
@@ -18,7 +16,7 @@ function Menu() {
           {pizzas.map((element, index) => {
             return (
               <div class="pizza-container">
-                <img src={element.image} />
+                <img src={element.image} alt='pizza' />
                 <div class="pizza-text">
                   <h2>{element.pizza}</h2>
                   <p>{element.description}</p>

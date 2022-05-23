@@ -1,6 +1,7 @@
 {
-  "name": "tobipizza",
-  "version": "0.1.0",
+  "name": "tobispizza",
+  "version": "1.0.0",
+  "description": "my react application",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",

@@ -41,10 +41,11 @@ function NavBar() {
                             { element.quantity[2] ? <>Lg x{element.quantity[2]}</> : <></>}
                           </li>
                         </ul>
-                        <img src={element.image} />
+                        <img src={element.image} alt='pizza' />
                       </div>
                     )
                   }
+                  return null
                 })}
                 <div class="checkout">
                   <button onClick={() => dispatch(changeAnimation(true))}>Total: {formatter.format(priceTotal)} Checkout</button>

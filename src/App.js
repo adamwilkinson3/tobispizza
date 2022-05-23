@@ -5,6 +5,8 @@ import Register from './Register'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 
 function App() {
+  <Router></Router>
+  useNavigate('')
   return (
     <div className="App">
       <Routes>
